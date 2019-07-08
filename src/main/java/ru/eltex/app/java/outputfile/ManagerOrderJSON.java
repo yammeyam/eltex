@@ -1,4 +1,6 @@
 package ru.eltex.app.java.outputfile;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import ru.eltex.app.java.shop.Order;
 import ru.eltex.app.java.shop.Orders;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -8,11 +10,14 @@ import java.io.File;
 import java.io.IOException;
 import java.util.UUID;
 
+import static javafx.scene.input.KeyCode.T;
+
 public class ManagerOrderJSON extends AManageOrder {
     ObjectMapper mapper;
     File file=new File("temp.json");
     public ManagerOrderJSON() {
         mapper = new ObjectMapper();
+        mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
     }
 
 

@@ -1,5 +1,6 @@
 package ru.eltex.app.java.shop;
 
+
 import ru.eltex.app.java.enums.Status;
 
 import java.io.Serializable;
@@ -22,6 +23,15 @@ public class Order implements Serializable {
 
     public UUID getUuid() {
         return uuid;
+    }
+    public Order(){
+        wait=0;
+        status=null;
+        timeCreate=null;
+        uuid=null;
+        timeWait=null;
+        credentials=null;
+        shoppingCart=null;
     }
     public Order(Credentials credentials, ShoppingCart shoppingCart) {
         uuid=UUID.randomUUID();

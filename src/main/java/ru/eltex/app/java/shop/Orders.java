@@ -1,5 +1,7 @@
 package ru.eltex.app.java.shop;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import ru.eltex.app.java.enums.Status;
 
 import java.io.Serializable;

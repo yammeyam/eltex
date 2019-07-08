@@ -1,5 +1,6 @@
 package ru.eltex.app.java;
 
+import ru.eltex.app.java.outputfile.ManagerOrderFile;
 import ru.eltex.app.java.outputfile.ManagerOrderJSON;
 import ru.eltex.app.java.threads.CheckWaiting;
 import ru.eltex.app.java.threads.DelOld;
@@ -73,7 +74,7 @@ public class Main {
         catch (InterruptedException e){
             System.out.println(e.getMessage());
         }
-        /*ManagerOrderFile managerOrderFile=new ManagerOrderFile();
+      /*  ManagerOrderFile managerOrderFile=new ManagerOrderFile();
         managerOrderFile.saveAll(allOrders);
         System.out.println("-----------------");
         allOrders.clearAll();
