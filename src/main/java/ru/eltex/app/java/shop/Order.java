@@ -1,6 +1,8 @@
 package ru.eltex.app.java.shop;
 
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import ru.eltex.app.java.enums.Status;
 
 import java.io.Serializable;
@@ -9,12 +11,30 @@ import java.sql.Date;
 import java.util.Random;
 import java.util.UUID;
 
-
+@JsonAutoDetect
 public class Order implements Serializable {
     private long wait;
     private Status status;//Статус заказа
+    @JsonFormat
+    public void setTimeCreate(Date timeCreate) {
+        this.timeCreate = timeCreate;
+    }
+    @JsonFormat
+    public void setTimeWait(Date timeWait) {
+        this.timeWait = timeWait;
+    }
+    @JsonFormat
+    public Date getTimeCreate() {
+        return timeCreate ;
+    }
+    @JsonFormat
+    public Date getTimeWait() {
+        return  timeWait ;
+    }
+    @JsonFormat
     private Date timeCreate;//Время создания
     private UUID uuid;
+    @JsonFormat
     private Date timeWait;//Время ожидания
     private Credentials credentials;
     private ShoppingCart shoppingCart;
@@ -70,7 +90,54 @@ public class Order implements Serializable {
         }
     }
 
-    public Date getTimeCreate() {
+  /*  public Date getTimeCreate() {
         return timeCreate;
+    }*/
+    public long getWait() {
+        return wait;
     }
+  /*  public long getTimeCreate() {
+        return timeCreate.getTime();
+    }
+
+    public void setWait(long wait) {
+        this.wait = wait;
+    }
+*/
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+  /*  public void setTimeCreate(long time) {
+        timeCreate.setTime(time);
+    }*/
+
+    public void setUuid(UUID uuid) {
+        this.uuid = uuid;
+    }
+
+/*    public long getTimeWait() {
+        return timeWait.getTime();
+    }
+
+    public void setTimeWait(long time) {
+        timeWait.setTime(time);
+    }*/
+
+    public Credentials getCredentials() {
+        return credentials;
+    }
+
+    public void setCredentials(Credentials credentials) {
+        this.credentials = credentials;
+    }
+
+    public ShoppingCart getShoppingCart() {
+        return shoppingCart;
+    }
+
+    public void setShoppingCart(ShoppingCart shoppingCart) {
+        this.shoppingCart = shoppingCart;
+    }
+
 }

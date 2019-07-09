@@ -1,12 +1,224 @@
 {
   "orders" : [ {
-    "status" : "WAITING",
-    "timeCreate" : 1562581786950,
-    "uuid" : "4eb4c5be-c858-410b-a127-fc5b83135e79"
-  }, {
+    "wait" : 4243826247481903311,
     "status" : "PROCESSED",
-    "timeCreate" : 1562581786952,
-    "uuid" : "f598fd5f-1f29-4343-897f-36a70e7a2f76"
+    "timeCreate" : 1562659612432,
+    "uuid" : "23d95d2e-8252-4642-a6e6-757e9f63881e",
+    "timeWait" : 4243827810141515743,
+    "credentials" : {
+      "id" : "0a7398cf-cd26-4e9d-8033-8a2e0e7e20b1",
+      "surname" : "Surname",
+      "name" : "Name",
+      "patronymic" : "Patronymic",
+      "email" : "Email"
+    },
+    "shoppingCart" : {
+      "basket" : [ {
+        "type" : "ru.eltex.app.java.products.Phone",
+        "id" : "361a605e-7ec7-4ca8-877f-d426ab4fae5f",
+        "title" : "MOBILEPHONE",
+        "price" : 9989,
+        "firm" : "NOKIA",
+        "mark" : "M721H",
+        "os" : "NONE",
+        "body" : "CLAMSHELL"
+      } ],
+      "id" : [ "361a605e-7ec7-4ca8-877f-d426ab4fae5f" ],
+      "shoppingCart" : [ {
+        "type" : "ru.eltex.app.java.products.Phone",
+        "id" : "361a605e-7ec7-4ca8-877f-d426ab4fae5f",
+        "title" : "MOBILEPHONE",
+        "price" : 9989,
+        "firm" : "NOKIA",
+        "mark" : "M721H",
+        "os" : "NONE",
+        "body" : "CLAMSHELL"
+      } ]
+    }
+  }, {
+    "wait" : 6203098522231860246,
+    "status" : "PROCESSED",
+    "timeCreate" : 1562659612990,
+    "uuid" : "da596408-762d-4aed-b708-90e589a26946",
+    "timeWait" : 6203100084891473236,
+    "credentials" : {
+      "id" : "9ffa6635-e6b6-46d4-b30a-f831d2357e8f",
+      "surname" : "Surname",
+      "name" : "Name",
+      "patronymic" : "Patronymic",
+      "email" : "Email"
+    },
+    "shoppingCart" : {
+      "basket" : [ {
+        "type" : "ru.eltex.app.java.products.Phone",
+        "id" : "fd3572ff-7be9-47a0-a963-803dc9d07ba5",
+        "title" : "MOBILEPHONE",
+        "price" : 7087,
+        "firm" : "SAMSUNG",
+        "mark" : "M721H",
+        "os" : "ANDROID",
+        "body" : "CLAMSHELL"
+      } ],
+      "id" : [ "fd3572ff-7be9-47a0-a963-803dc9d07ba5" ],
+      "shoppingCart" : [ {
+        "type" : "ru.eltex.app.java.products.Phone",
+        "id" : "fd3572ff-7be9-47a0-a963-803dc9d07ba5",
+        "title" : "MOBILEPHONE",
+        "price" : 7087,
+        "firm" : "SAMSUNG",
+        "mark" : "M721H",
+        "os" : "ANDROID",
+        "body" : "CLAMSHELL"
+      } ]
+    }
+  }, {
+    "wait" : 1215951288276577463,
+    "status" : "PROCESSED",
+    "timeCreate" : 1562659613338,
+    "uuid" : "1caa0ff3-5048-4b4b-9411-0fccd4d2e523",
+    "timeWait" : 1215952850936190801,
+    "credentials" : {
+      "id" : "16201d98-0389-496e-8c62-3b18b987f998",
+      "surname" : "Surname",
+      "name" : "Name",
+      "patronymic" : "Patronymic",
+      "email" : "Email"
+    },
+    "shoppingCart" : {
+      "basket" : [ {
+        "type" : "ru.eltex.app.java.products.Phone",
+        "id" : "94dca916-8eb0-49fc-96c9-68c08577d619",
+        "title" : "MOBILEPHONE",
+        "price" : 7367,
+        "firm" : "SAMSUNG",
+        "mark" : "M721H",
+        "os" : "ANDROID",
+        "body" : "CLAMSHELL"
+      } ],
+      "id" : [ "94dca916-8eb0-49fc-96c9-68c08577d619" ],
+      "shoppingCart" : [ {
+        "type" : "ru.eltex.app.java.products.Phone",
+        "id" : "94dca916-8eb0-49fc-96c9-68c08577d619",
+        "title" : "MOBILEPHONE",
+        "price" : 7367,
+        "firm" : "SAMSUNG",
+        "mark" : "M721H",
+        "os" : "ANDROID",
+        "body" : "CLAMSHELL"
+      } ]
+    }
   } ],
-  "firstUUID" : "4eb4c5be-c858-410b-a127-fc5b83135e79"
+  "sortBasket" : {
+    "2019-07-09T08:06:52.432+0000" : {
+      "wait" : 4243826247481903311,
+      "status" : "PROCESSED",
+      "timeCreate" : 1562659612432,
+      "uuid" : "23d95d2e-8252-4642-a6e6-757e9f63881e",
+      "timeWait" : 4243827810141515743,
+      "credentials" : {
+        "id" : "0a7398cf-cd26-4e9d-8033-8a2e0e7e20b1",
+        "surname" : "Surname",
+        "name" : "Name",
+        "patronymic" : "Patronymic",
+        "email" : "Email"
+      },
+      "shoppingCart" : {
+        "basket" : [ {
+          "type" : "ru.eltex.app.java.products.Phone",
+          "id" : "361a605e-7ec7-4ca8-877f-d426ab4fae5f",
+          "title" : "MOBILEPHONE",
+          "price" : 9989,
+          "firm" : "NOKIA",
+          "mark" : "M721H",
+          "os" : "NONE",
+          "body" : "CLAMSHELL"
+        } ],
+        "id" : [ "361a605e-7ec7-4ca8-877f-d426ab4fae5f" ],
+        "shoppingCart" : [ {
+          "type" : "ru.eltex.app.java.products.Phone",
+          "id" : "361a605e-7ec7-4ca8-877f-d426ab4fae5f",
+          "title" : "MOBILEPHONE",
+          "price" : 9989,
+          "firm" : "NOKIA",
+          "mark" : "M721H",
+          "os" : "NONE",
+          "body" : "CLAMSHELL"
+        } ]
+      }
+    },
+    "2019-07-09T08:06:52.990+0000" : {
+      "wait" : 6203098522231860246,
+      "status" : "PROCESSED",
+      "timeCreate" : 1562659612990,
+      "uuid" : "da596408-762d-4aed-b708-90e589a26946",
+      "timeWait" : 6203100084891473236,
+      "credentials" : {
+        "id" : "9ffa6635-e6b6-46d4-b30a-f831d2357e8f",
+        "surname" : "Surname",
+        "name" : "Name",
+        "patronymic" : "Patronymic",
+        "email" : "Email"
+      },
+      "shoppingCart" : {
+        "basket" : [ {
+          "type" : "ru.eltex.app.java.products.Phone",
+          "id" : "fd3572ff-7be9-47a0-a963-803dc9d07ba5",
+          "title" : "MOBILEPHONE",
+          "price" : 7087,
+          "firm" : "SAMSUNG",
+          "mark" : "M721H",
+          "os" : "ANDROID",
+          "body" : "CLAMSHELL"
+        } ],
+        "id" : [ "fd3572ff-7be9-47a0-a963-803dc9d07ba5" ],
+        "shoppingCart" : [ {
+          "type" : "ru.eltex.app.java.products.Phone",
+          "id" : "fd3572ff-7be9-47a0-a963-803dc9d07ba5",
+          "title" : "MOBILEPHONE",
+          "price" : 7087,
+          "firm" : "SAMSUNG",
+          "mark" : "M721H",
+          "os" : "ANDROID",
+          "body" : "CLAMSHELL"
+        } ]
+      }
+    },
+    "2019-07-09T08:06:53.338+0000" : {
+      "wait" : 1215951288276577463,
+      "status" : "PROCESSED",
+      "timeCreate" : 1562659613338,
+      "uuid" : "1caa0ff3-5048-4b4b-9411-0fccd4d2e523",
+      "timeWait" : 1215952850936190801,
+      "credentials" : {
+        "id" : "16201d98-0389-496e-8c62-3b18b987f998",
+        "surname" : "Surname",
+        "name" : "Name",
+        "patronymic" : "Patronymic",
+        "email" : "Email"
+      },
+      "shoppingCart" : {
+        "basket" : [ {
+          "type" : "ru.eltex.app.java.products.Phone",
+          "id" : "94dca916-8eb0-49fc-96c9-68c08577d619",
+          "title" : "MOBILEPHONE",
+          "price" : 7367,
+          "firm" : "SAMSUNG",
+          "mark" : "M721H",
+          "os" : "ANDROID",
+          "body" : "CLAMSHELL"
+        } ],
+        "id" : [ "94dca916-8eb0-49fc-96c9-68c08577d619" ],
+        "shoppingCart" : [ {
+          "type" : "ru.eltex.app.java.products.Phone",
+          "id" : "94dca916-8eb0-49fc-96c9-68c08577d619",
+          "title" : "MOBILEPHONE",
+          "price" : 7367,
+          "firm" : "SAMSUNG",
+          "mark" : "M721H",
+          "os" : "ANDROID",
+          "body" : "CLAMSHELL"
+        } ]
+      }
+    }
+  }
 }

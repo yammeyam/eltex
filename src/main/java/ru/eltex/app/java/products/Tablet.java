@@ -10,6 +10,23 @@ import java.util.UUID;
 public class Tablet extends Electronics {
     private GPU gpu;
     private String resol;
+
+    public GPU getGpu() {
+        return gpu;
+    }
+
+    public void setGpu(GPU gpu) {
+        this.gpu = gpu;
+    }
+
+    public String getResol() {
+        return resol;
+    }
+
+    public void setResol(String resol) {
+        this.resol = resol;
+    }
+
     public Tablet(){
         setTitle(Title.TABLET);
         id= UUID.randomUUID();

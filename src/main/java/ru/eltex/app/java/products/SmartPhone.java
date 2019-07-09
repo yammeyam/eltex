@@ -3,6 +3,22 @@ import ru.eltex.app.java.enums.*;
 import java.util.UUID;
 
 public class SmartPhone extends Electronics {
+    public SimType getSimType() {
+        return simType;
+    }
+
+    public void setSimType(SimType simType) {
+        this.simType = simType;
+    }
+
+    public SimVal getValSim() {
+        return valSim;
+    }
+
+    public void setValSim(SimVal valSim) {
+        this.valSim = valSim;
+    }
+
     private SimType simType;
     private SimVal valSim;
     public SmartPhone(){

@@ -8,6 +8,14 @@ import java.util.UUID;
 
 public class Phone extends Electronics {
 
+    public Body getBody() {
+        return body;
+    }
+
+    public void setBody(Body body) {
+        this.body = body;
+    }
+
     private Body body;
 
     public Phone() {

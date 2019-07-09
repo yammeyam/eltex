@@ -6,15 +6,18 @@ import ru.eltex.app.java.enums.Status;
 import java.io.Serializable;
 import java.sql.Date;
 import java.util.*;
+
 @JsonAutoDetect
-public class Orders <T extends Order > implements Serializable {
+public class Orders<T extends Order> implements Serializable {
     public void setOrders(List<T> orders) {
         this.orders = orders;
     }
+
     @JsonFormat
     public Map<Date, T> getSortBasket() {
         return sortBasket;
     }
+
     @JsonFormat
     public void setSortBasket(Map<Date, T> sortBasket) {
         this.sortBasket = sortBasket;
@@ -22,7 +25,7 @@ public class Orders <T extends Order > implements Serializable {
 
     public Orders() {
         orders = new ArrayList<T>();
-        sortBasket = new TreeMap<Date,T>();
+        sortBasket = new TreeMap<Date, T>();
     }
 
     private List<T> orders;
@@ -30,6 +33,7 @@ public class Orders <T extends Order > implements Serializable {
     public List<T> getOrders() {
         return orders;
     }
+
     @JsonFormat
     private Map<Date, T> sortBasket;
 
@@ -42,16 +46,18 @@ public class Orders <T extends Order > implements Serializable {
             }
         }
     }
-    public void add(T order){
+
+    public void add(T order) {
         synchronized (orders) {
             orders.add(order);
             sortBasket.put(order.getTimeCreate(), order);
         }
     }
+
     public void checkOrders() {
-        synchronized (orders){
+        synchronized (orders) {
             for (T it : orders) {
-               it.setStatus();
+                it.setStatus();
             }
         }
     }
@@ -69,30 +75,34 @@ public class Orders <T extends Order > implements Serializable {
             }
         }
     }
-    public Order getOrderById(UUID uuid){
-        for (T it:orders){
-            if(it.getUuid()==uuid){
+
+    public Order getOrderById(UUID uuid) {
+        for (T it : orders) {
+            if (it.getUuid() == uuid) {
                 return it;
             }
         }
         return null;
     }
+
     public void showAllOrders() {
         System.out.println("Все заказы:");
-            for (T it : orders) {
-                it.printOrder();
-            }
+        for (T it : orders) {
+            it.printOrder();
+        }
     }
-    public void clearAll(){
+
+    public void clearAll() {
         synchronized (orders) {
             orders.clear();
             sortBasket.clear();
         }
     }
+
     @JsonIgnore
-    public UUID getFirstUUID(){
-        for (T current: orders){
-           return current.getUuid();
+    public UUID getFirstUUID() {
+        for (T current : orders) {
+            return current.getUuid();
         }
         return null;
     }
