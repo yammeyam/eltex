@@ -1,14 +1,25 @@
 package ru.eltex.app.java.shop;
 
-import com.fasterxml.jackson.annotation.JsonSubTypes;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.*;
 import ru.eltex.app.java.enums.Status;
 
 import java.io.Serializable;
 import java.sql.Date;
 import java.util.*;
-
+@JsonAutoDetect
 public class Orders <T extends Order > implements Serializable {
+    public void setOrders(List<T> orders) {
+        this.orders = orders;
+    }
+    @JsonFormat
+    public Map<Date, T> getSortBasket() {
+        return sortBasket;
+    }
+    @JsonFormat
+    public void setSortBasket(Map<Date, T> sortBasket) {
+        this.sortBasket = sortBasket;
+    }
+
     public Orders() {
         orders = new ArrayList<T>();
         sortBasket = new TreeMap<Date,T>();
@@ -19,7 +30,7 @@ public class Orders <T extends Order > implements Serializable {
     public List<T> getOrders() {
         return orders;
     }
-
+    @JsonFormat
     private Map<Date, T> sortBasket;
 
     public void checkout(Credentials credentials, ShoppingCart shoppingCart) {
@@ -78,6 +89,7 @@ public class Orders <T extends Order > implements Serializable {
             sortBasket.clear();
         }
     }
+    @JsonIgnore
     public UUID getFirstUUID(){
         for (T current: orders){
            return current.getUuid();
